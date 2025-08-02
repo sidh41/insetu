@@ -1,0 +1,114 @@
+@import '../../../styles.scss';
+
+.bg-dark {
+    background-color: $white;
+    transition: background-color 1s ease;
+}
+
+nav {
+    // background: linear-gradient(to bottom, rgb(0 0 0 / 25%), transparent);    
+    transition: all 0.5s ease;
+    transition: background-color 0.5s ease;
+
+    button.navbar-toggler {
+        border: none;
+        padding: 0;
+        color: $dark;
+        // filter: invert(100%) for White Color;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .nav-link {
+        color: black;
+        font-size: $fs-md;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    .badge {
+        top: 6px !important;
+    }
+
+    @include media-breakpoint-up(md) {
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.with-padding {
+    padding: 30px 50px !important;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Submenu SCSS
+.navbar .dropdown-menu {
+    display: none;
+    padding: 0;
+    border: 0;
+    background: $primary;
+    color: $white;
+    border-radius: 0;
+
+    a {
+        font-weight: 500;
+        color: $white;
+    }
+}
+
+.navbar .dropdown-menu .dropdown-submenu a {
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-dark;
+        color: $white;
+    }
+
+}
+
+.navbar .dropdown-menu a {
+    &:hover {
+        background-color: $primary-dark;
+        color: $white;
+    }
+}
+
+/* Display direct child dropdown menus on parent hover */
+.navbar .nav-item.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Position and display nested dropdowns on hover */
+.navbar .dropdown-menu .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+
+    @include media-breakpoint-down(sm) {
+        position: relative !important;
+        left: 16px;
+        right: 16px;
+        width: 88%;
+    }
+}
+
+/* Optional: Ensure dropdown menus are visible above other content */
+@include media-breakpoint-down(sm) {
+    .navbar .nav-item.dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+}

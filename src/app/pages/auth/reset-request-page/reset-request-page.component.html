@@ -1,0 +1,96 @@
+<!-- <app-header />
+<div class="container contact mt-5">
+  <div class="card p-3">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-left container">
+          <h2 class="mb-5 text-center">Request a Password Reset!</h2>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12">
+        <div class="container">
+          <div class="unique">
+            <div class="form px-md-3 mb-0">
+              <div data-aos="fade-up" data-aos-easing="ease">
+              </div>
+              <div class="card-body px-lg-5 py-lg-5">
+                <div *ngIf="status !== 'submitted'" class="card-content request fade-in">
+                  <div class="text-center text-muted mb-4 text-lg">
+                    <small> If you have forgotten your password you may enter your email below to
+                      receive a link to reset it. If your account exists we will send an email
+                      to the email address.</small>
+                  </div>
+                </div>
+                <div *ngIf="status !== 'submitted'" class="card-content request fade-in">
+                  <form [formGroup]="credentials" (ngSubmit)="generateReset()">
+                    <div class="form-group mb-3">
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" formControlName="email" placeholder="Email" type="email">
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary my-4">Send Reset Email</button>
+                    </div>
+                  </form>
+                </div>
+
+                <div *ngIf="status == 'submitted'" class="card-content request fade-in">
+                  <div class="header text-center">
+                    <h1>Email on the Way!</h1>
+                  </div>
+                  <p>
+                    If the email provided is associated with an account, a password reset
+                    email will be sent to it shortly.
+                  </p>
+                  <p>Didn't receive an email within 10 minutes?</p>
+                  <div class="text-center">
+                    <button class="btn btn-primary my-4" (click)="resetForm()">Try Again</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center custom-body">
+  <div class="card shadow-lg border-0" style="width: 36rem; height: 34rem; background-color: #000;">
+    <div class="card-body p-4 d-flex flex-column justify-content-center">
+      <h1 class="text-center text-primary fw-bold mb-4">Forgot your password</h1>
+      <h6 class="text-center text-white mb-4">Please enter the email address you would like your password reset
+        information sent to</h6> -->
+
+
+<!-- 
+      <div *ngIf="status !== 'submitted'" class="card-content request fade-in">
+        <form [formGroup]="credentials" (ngSubmit)="generateReset()">
+          <div class="form-group mb-3">
+            <div class="input-group input-group-alternative">
+              <input class="form-control" formControlName="email" placeholder="Email" type="email">
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary my-4">Send Reset Email</button>
+          </div>
+        </form>
+      </div> -->
+
+<!-- <form [formGroup]="credentials" (ngSubmit)="generateReset()">
+        <div class="mb-3">
+          <label for="email" class="form-label text-white">Email address</label>
+          <input class="form-control" formControlName="email" placeholder="Email" type="email">
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 fw-bold rounded-2 py-2 text-white mt-3">
+          Request Rest OTP
+        </button>
+      </form>
+      <h4 class="w-100 fw-bold rounded-2 py-2 text-primary mt-3 text-center">
+        <a routerLink="/auth/login">Back to Login</a>
+      </h4>
+    </div>
+  </div>
+</div> -->

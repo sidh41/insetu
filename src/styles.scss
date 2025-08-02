@@ -1,1 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+// Colors
+$white: #feffff;
+$deep-green: #003220;
+$primary: #0a6a68;
+$dark: #202020;
+$primary-dark: rgb(59 130 246);
+$lightPrimary: rgb(10 106 104 / 25%);
+
+@import 'bootstrap/scss/bootstrap';
+@import "bootstrap-icons/font/bootstrap-icons";
+// @import 'aos/dist/aos.css';
+
+// Custom Font
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-display: swap;
+    font-weight: bolder;
+    src: url(/fonts/Outfit/Outfit-ExtraBold.ttf) format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-display: swap;
+    font-weight: bold;
+    src: url(/fonts/Outfit/Outfit-Bold.ttf) format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(/fonts/Outfit/Outfit-Medium.ttf) format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(/fonts/Outfit/Outfit-Regular.ttf) format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src: url(/fonts/Outfit/Outfit-Light.ttf) format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 200;
+    src: url(/fonts/Outfit/Outfit-ExtraLight.ttf) format('woff2');
+}
+
+* {
+    font-family: 'Outfit' !important;
+    letter-spacing: 0.4px;
+}
+
+// Font Size
+$fs-xs: 0.75rem;
+/* 12px */
+$fs-sm: 0.875rem;
+/* 14px */
+$fs-md: 1rem;
+/* 16px */
+$fs-lg: 1.25rem;
+/* 20px */
+$fs-xl: 1.5rem;
+/* 24px */
+$fs-xxl: 3rem;
+/* 28px */
+$fs-xxxl: 6rem;
+
+
+.fs-xs {
+    font-size: $fs-xs;
+}
+
+.fs-sm {
+    font-size: $fs-sm;
+}
+
+.fs-md {
+    font-size: $fs-md;
+}
+
+.fs-lg {
+    font-size: $fs-lg;
+}
+
+.fs-xl {
+    font-size: $fs-xl;
+}
+
+.fs-xxl {
+    font-size: $fs-xxl;
+}
+
+.fs-xxxl {
+    font-size: $fs-xxxl;
+}
+
+.fw-regular {
+    font-weight: 500 !important;
+}
+
+body {
+    background-color: #f7f8f9 !important;
+}
+
+// @import 'css/argon-dashboard.css';
+// @import 'css/nucleo-icons.css';
+// @import 'css/nucleo-svg.css';

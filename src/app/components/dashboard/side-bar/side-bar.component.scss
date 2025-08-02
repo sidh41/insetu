@@ -1,0 +1,37 @@
+@import '../../../../styles.scss';
+
+h2 {
+  color: white;
+}
+
+.sidebar {
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  padding-top: 60px;
+  left: 0;
+  background: $dark;
+  width: inherit;
+  height: 100vh !important;
+
+  @include media-breakpoint-down(sm) {
+    width: 50%;
+  }
+}
+
+.hover-effect:hover {
+  background-color: #0d6efd !important;
+  color: white !important;
+}
+
+.transition-width {
+  transition: width 0.3s ease;
+}
+
+aside i {
+  font-size: 1.2rem;
+}
+
+aside span {
+  white-space: nowrap;
+}

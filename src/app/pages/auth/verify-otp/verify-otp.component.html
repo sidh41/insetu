@@ -1,0 +1,29 @@
+<div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center custom-body">
+  <div class="card shadow-lg border-0" style="width: 36rem; height: 34rem; background-color: #000;">
+    <div class="card-body p-4 d-flex flex-column justify-content-center">
+      <h1 class="text-center text-primary fw-bold mb-4">Verify OTP</h1>
+
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label text-white">OTP</label>
+          <input
+            type="password"
+            id="email"
+            name="email"
+            class="form-control rounded-2"
+            required
+          />
+        </div>
+
+        
+
+        <button type="submit" class="btn btn-primary w-100 fw-bold rounded-2 py-2 text-white">
+          Verify OTP
+        </button>
+      </form>
+      <h4 class="w-100 fw-bold rounded-2 py-2 text-primary mt-3 text-center">
+        <a routerLink="/auth/login">Back to Login</a>
+      </h4>
+    </div>
+  </div>
+</div>

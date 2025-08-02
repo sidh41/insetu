@@ -1,0 +1,73 @@
+// @import '../../../../styles.scss';
+
+// .contact {
+//   h1 {
+//     font-size: $fs-xxl;
+//     font-weight: 300;
+//     color: $dark;
+
+//     @include media-breakpoint-down(sm) {
+//       font-size: $fs-xl;
+//     }
+//   }
+
+//   .c-card {
+//     text-align: center;
+//     margin-bottom: 20px;
+//     display: grid;
+//     padding-top: 30%;
+
+//     .title {
+//       font-size: $fs-lg;
+//       font-weight: 400;
+//       color: $primary;
+//     }
+
+//     p {
+//       color: $gray-800;
+//       font-weight: 500;
+//       display: flex;
+//       color: #202020;
+//     }
+
+//     .details {
+//       display: flex;
+//       flex-direction: column;
+
+//       i {
+//         margin-right: 8px;
+//       }
+
+//       a {
+//         text-decoration: none;
+//         color: $dark;
+//         font-weight: 500;
+//         font-size: $fs-md;
+//       }
+//     }
+//   }
+
+//   .social {
+//     label {
+//       a {
+//         margin-right: 8px;
+//         color: $primary;
+//         cursor: pointer;
+
+//         &:hover {
+//           color: $primary;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.error {
+  color: red;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.custom-body {
+  background-color: rgb(17 24 39) !important;
+}

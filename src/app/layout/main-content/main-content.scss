@@ -1,0 +1,36 @@
+@import "../../../styles.scss";
+
+body {
+  overflow-x: hidden !important;
+}
+
+.dashboard-container {
+  display: flex;
+
+  app-sidebar {
+    flex-shrink: 0;
+  }
+
+  .dashboard-content {
+    overflow-x: hidden !important;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      width: -webkit-fill-available;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-left: 250px;
+      width: calc(100% - 250px);
+    }
+
+    .dashboard-section {
+      padding: 1.5rem;
+      margin-top: 64px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 68px;
+      }
+    }
+  }
+}

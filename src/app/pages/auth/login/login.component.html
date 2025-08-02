@@ -1,0 +1,136 @@
+<div class="container">
+  <div class="login-wrapper row">
+    <!-- Left: Login form -->
+    <div class="col-12">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="login-form">
+            <img src="assets/images/logo/logo.png" alt="Revadrive Logo" class="logo" />
+
+            <h2>Login</h2>
+            <p class="subtitle">Login to access your account</p>
+
+            <form (ngSubmit)="onSubmit()" [formGroup]="Authform">
+              <div class="form-group">
+                <!-- <label>Email</label>
+                <input type="email" class="form-control" placeholder="Enter Email" /> -->
+                <label for="email" class="form-label text-white">Email address</label>
+                <input type="email" formControlName="email" id="email" name="email" class="form-control rounded-2"
+                  required />
+              </div>
+              <app-error [control]="Authform.get('email')" [errorMessages]="error_messages.email" />
+
+              <div class="form-group password-group">
+                <label for="password" class="form-label text-white">Password</label>
+                <div class="password-wrapper">
+                  <input type="password" id="password" formControlName="password" name="password"
+                    class="form-control rounded-2" required />
+                  <i class="bi bi-eye-slash password-toggle-icon"></i>
+                </div>
+              </div>
+              <app-error [control]="Authform.get('password')" [errorMessages]="error_messages.password" />
+
+              <div class="form-options">
+                <label><input type="checkbox" /> Remember me</label>
+                <a href="#">Forgot Password</a>
+              </div>
+
+              <button type="submit" class="btn btn-success text-white" routerLink="dashboard/home">Login</button>
+            </form>
+
+            <!-- <form class="auth-card p-4 rounded-3 shadow-lg" (ngSubmit)="onSubmit()" [formGroup]="Authform">
+              <div class="mb-3">
+                <label for="email" class="form-label text-white">Email address</label>
+                <input type="email" formControlName="email" id="email" name="email" class="form-control rounded-2"
+                  required />
+              </div>
+              <app-error [control]="Authform.get('email')" [errorMessages]="error_messages.email" />
+              <div class="mb-3">
+                <label for="password" class="form-label text-white">Password</label>
+                <input type="password" id="password" formControlName="password" name="password"
+                  class="form-control rounded-2" required />
+              </div>
+              <app-error [control]="Authform.get('password')" [errorMessages]="error_messages.password" />
+
+              <div class="d-flex justify-content-end mb-3">
+                <a routerLink="/auth/reset-request" class="text-primary fw-semibold">Forgot password?</a>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 fw-bold rounded-2 py-2 text-white">
+                Sign in
+              </button>
+
+              <div class="text-center mt-3 text-white">
+                Don’t have an account yet?
+                <a routerLink="/auth/register" class="text-primary fw-bold">Sign up</a>
+              </div>
+            </form> -->
+
+
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-md-block d-none">
+          <div class="login-carousel">
+            <ngb-carousel [interval]="3000" [showNavigationArrows]="false" [showNavigationIndicators]="true">
+              <ng-template ngbSlide *ngFor="let img of slides">
+                <img [src]="img" alt="slide" />
+              </ng-template>
+            </ngb-carousel>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- new design START -->
+  <main class="main-content  mt-0">
+    <section>
+      <div class="page-header min-vh-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+              <div class="card card-plain">
+                <div class="card-header pb-0 text-start">
+                  <h4 class="font-weight-bolder">Sign In</h4>
+                  <p class="mb-0">Enter your email and password to sign in</p>
+                </div>
+                <div class="card-body">
+                  <form role="form">
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                  <p class="mb-4 text-sm mx-auto">
+                    Don't have an account?
+                    <a href="javascript:;" class="text-primary text-gradient font-weight-bold">Sign up</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signin-ill.jpg');
+          background-size: cover;">
+                <span class="mask bg-gradient-primary opacity-6"></span>
+                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Attention is the new currency"</h4>
+                <p class="text-white position-relative">The more effortless the writing looks, the more effort the writer actually put into the process.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- new design END -->
