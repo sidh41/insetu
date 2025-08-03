@@ -14,7 +14,7 @@ import { AbstractControl, FormsModule } from '@angular/forms';
   `,
   styles: [`
       .error-message {
-      color: red;
+      color: #dc3545;
       margin: 5px 0px;
     }  `],
   imports: [CommonModule, FormsModule,]
