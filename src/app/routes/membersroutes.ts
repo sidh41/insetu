@@ -1,6 +1,7 @@
 import { Route, Routes } from '@angular/router';
 import { MainContent } from '../layout/main-content/main-content';
 import { Dashboard } from '../pages/dashboard/dashboard';
+import { Performance } from '../pages/performance/performance';
 // import { Organization } from '../pages/organization/organization';
 // import { Campaign } from '../pages/campaign/campaign';
 // import { LeadBank } from '../pages/lead-bank/lead-bank';
@@ -11,9 +12,9 @@ export const Member_Routes: Routes = [{
   path: '',
   component: MainContent,
   children: [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: Dashboard },
-    // { path: 'performance', component: Performance },
+    { path: 'performance', component: Performance },
     // { path: 'campaign', component: Campaign },
     // { path: 'lead-bank', component: LeadBank },
     // { path: 'mail-templates', component: MailTemplates },

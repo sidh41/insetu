@@ -1,22 +1,36 @@
-<header class="header">
-  <form class="search-form d-none d-md-block">
-    <div class="input-group position-relative">
-      <span class="input-group-text search-icon border-0 position-absolute start-0 ms-3">
-        <i class="bi bi-search"></i>
-      </span>
-      <input type="text" class="form-control rounded-pill ps-5 pe-4" placeholder="Search anything..." />
-      <span class="d-none input-group-text shortcut-hint bg-white border-0 position-absolute end-0 me-2">
-        ⌘ F
-      </span>
-    </div>
-  </form>
+<header class="header ps-md-5 pe-md-5">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-md-5 fs-sm">
+      <li class="breadcrumb-item text-sm">
+        <a class="text-white" href="javascript:;">
+          <i class="bi bi-box2-fill"></i>
+        </a>
+      </li>
+      <li class="breadcrumb-item text-sm text-white"><a class="text-opacity-50 text-white fw-light text-decoration-none">Pages</a></li>
+      <li class="breadcrumb-item text-sm text-white active fw-light" aria-current="page">Default</li>
+    </ol>
+    <h6 class="mb-0 text-white fs-md fw-regular mt-1">Default</h6>
+  </nav>
+  <button type="button" class="btn btn-link text-white d-md-block d-none"><i class="bi bi-list fs-xl"></i></button>
+  
 
-  <button class="btn d-lg-none menu-btn" (click)="openSidebar(sidebarOffcanvas)" aria-label="Open sidebar">
+  <button class="btn d-lg-none menu-btn text-white btn-link btn-lg" (click)="openSidebar(sidebarOffcanvas)" aria-label="Open sidebar">
     <i class="bi bi-list"></i>
   </button>
 
   <!-- Right icons -->
   <div class="d-flex align-items-center gap-4 ms-auto">
+    <form class="search-form d-none d-md-block">
+      <div class="input-group position-relative">
+        <span class="input-group-text search-icon border-0 position-absolute start-0 ms-3">
+          <i class="bi bi-search"></i>
+        </span>
+        <input type="text" class="form-control rounded-pill ps-5 pe-4" placeholder="Type here..." />
+        <span class="d-none input-group-text shortcut-hint bg-white border-0 position-absolute end-0 me-2">
+          ⌘ F
+        </span>
+      </div>
+    </form>
     <div class="header-icons">
       <a href="#" class="icon-wrapper">
         <i class="bi bi-envelope fs-5"></i>

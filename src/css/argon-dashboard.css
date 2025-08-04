@@ -22392,7 +22392,7 @@ fieldset:disabled .btn {
   height: 1rem;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
 
   .dropdown .dropdown-menu,
   .dropup .dropdown-menu,
@@ -22486,7 +22486,7 @@ fieldset:disabled .btn {
   .dropdown-item {
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-}
+} */
 
 @media (max-width: 991.98px) {
   .navbar-toggler+.navbar-collapse .dropdown:not(.nav-item) .dropdown-menu {
@@ -23121,12 +23121,18 @@ label,
   height: 48px;
   background-position: center;
   border-radius: 0.75rem;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    float: right;
+
 }
 
 .icon-shape i {
   color: #fff;
   opacity: 0.8;
-  top: 14px;
+  top: 2px;
   position: relative;
 }
 

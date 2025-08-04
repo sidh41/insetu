@@ -3,6 +3,18 @@
 body {
   overflow-x: hidden !important;
 }
+.min-height-300 {
+  min-height: 300px !important;
+}
+.bg-dark {
+  background-color: #344767 !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
 
 .dashboard-container {
   display: flex;
@@ -20,12 +32,12 @@ body {
     }
 
     @include media-breakpoint-up(md) {
-      margin-left: 250px;
-      width: calc(100% - 250px);
+      margin-left: 275px;
+        width: calc(100% - 275px);
     }
 
     .dashboard-section {
-      padding: 1.5rem;
+      padding: 2rem 1rem;
       margin-top: 64px;
 
       @include media-breakpoint-down(md) {

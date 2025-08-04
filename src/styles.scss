@@ -17,7 +17,7 @@ $lightPrimary: rgb(10 106 104 / 25%);
     font-style: normal;
     font-display: swap;
     font-weight: bolder;
-    src: url(/fonts/Outfit/Outfit-ExtraBold.ttf) format('woff2');
+    src: url(/assets/fonts/Outfit/Outfit-ExtraBold.ttf) format('woff2');
 }
 
 @font-face {
@@ -25,7 +25,7 @@ $lightPrimary: rgb(10 106 104 / 25%);
     font-style: normal;
     font-display: swap;
     font-weight: bold;
-    src: url(/fonts/Outfit/Outfit-Bold.ttf) format('woff2');
+    src: url(/assets/fonts/Outfit/Outfit-Bold.ttf) format('woff2');
 }
 
 @font-face {
@@ -33,7 +33,7 @@ $lightPrimary: rgb(10 106 104 / 25%);
     font-style: normal;
     font-display: swap;
     font-weight: 500;
-    src: url(/fonts/Outfit/Outfit-Medium.ttf) format('woff2');
+    src: url(/assets/fonts/Outfit/Outfit-Medium.ttf) format('woff2');
 }
 
 @font-face {
@@ -41,7 +41,7 @@ $lightPrimary: rgb(10 106 104 / 25%);
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(/fonts/Outfit/Outfit-Regular.ttf) format('woff2');
+    src: url(/assets/fonts/Outfit/Outfit-Regular.ttf) format('woff2');
 }
 
 @font-face {
@@ -49,7 +49,7 @@ $lightPrimary: rgb(10 106 104 / 25%);
     font-style: normal;
     font-display: swap;
     font-weight: 300;
-    src: url(/fonts/Outfit/Outfit-Light.ttf) format('woff2');
+    src: url(/assets/fonts/Outfit/Outfit-Light.ttf) format('woff2');
 }
 
 @font-face {
@@ -57,7 +57,7 @@ $lightPrimary: rgb(10 106 104 / 25%);
     font-style: normal;
     font-display: swap;
     font-weight: 200;
-    src: url(/fonts/Outfit/Outfit-ExtraLight.ttf) format('woff2');
+    src: url(/assets/fonts/Outfit/Outfit-ExtraLight.ttf) format('woff2');
 }
 
 * {
@@ -114,7 +114,7 @@ $fs-xxxl: 6rem;
 }
 
 body {
-    background-color: #f7f8f9 !important;
+    background-color: #f8f9fa !important;
 }
 
 // @import 'css/argon-dashboard.css';

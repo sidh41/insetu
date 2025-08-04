@@ -1,0 +1,46 @@
+<!-- <div class="dashboard-cards  row g-4 mb-4">
+  <div class="col-6 col-6">
+    <div class="card shadow-lg quick-card text-center p-3">
+      <canvas baseChart [data]="barChartData" [options]="barChartOptions" [type]="barChartType"
+        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+      </canvas>
+    </div>
+  </div>
+  <div class="col-6 col-6">
+    <div class="card shadow-lg quick-card text-center p-3">
+      <canvas baseChart [data]="pieChartData" [type]="pieChartType" [options]="pieChartOptions">
+      </canvas>
+    </div>
+  </div>
+</div> -->
+
+<div class="row">
+  <div class="col-6">
+    <div class="card bg-gradient-default shadow">
+      <div class="card-header bg-transparent">
+        <h2 class=" mb-0">Sales value</h2>
+      </div>
+      <div class="card-body">
+        <!-- Chart -->
+        <div class="chart">
+          <!-- Chart wrapper -->
+          <!-- <canvas baseChart [data]="barChartData" [options]="barChartOptions" [type]="barChartType"
+            (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+          </canvas> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card shadow">
+      <div class="card-header bg-transparent">
+        <h2 class="mb-0">Total orders</h2>
+      </div>
+      <div class="card-body">
+        <div class="chart">
+          <!-- <canvas baseChart [data]="pieChartData" [type]="pieChartType" [options]="pieChartOptions"></canvas> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
