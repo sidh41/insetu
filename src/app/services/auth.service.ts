@@ -159,6 +159,7 @@ export class AuthService {
         { path: '/performance', title: 'Performance', icon: 'bi bi-bar-chart-fill', class: '' },
         { path: '/organization', title: 'Create Organization', icon: 'bi bi-plus-circle', class: '' },
         { path: '/users', title: 'Create Users', icon: 'bi bi-plus-circle', class: '' },
+        { path: '/general', title: 'Create general', icon: 'bi bi-plus-circle', class: '' },
         { path: '/campaign', title: 'Create Campaign', icon: 'bi bi-plus-circle', class: '' },
         { path: '/lead-bank', title: 'Lead Bank', icon: 'bi bi-bank2', class: '' },
         { path: '/mail-templates', title: 'Mail Templates', icon: 'bi bi-envelope-paper-fill', class: '' },
