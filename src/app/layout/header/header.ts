@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { NgbDropdownModule, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { Sidebar } from "../sidebar/sidebar";
 import { RouterModule } from '@angular/router';
@@ -22,6 +22,12 @@ export class Header {
 
   LogoutUser() {
     this.authService.logout(true);
+  }
+
+  @Output() toggleSidebarEvent = new EventEmitter<void>();
+
+  onToggleSidebar() {
+    this.toggleSidebarEvent.emit();
   }
 
 }

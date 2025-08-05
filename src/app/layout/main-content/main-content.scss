@@ -23,6 +23,21 @@ body {
     flex-shrink: 0;
   }
 
+  &.sidebar-shrink {
+    .dashboard-content {
+      margin-left: 120px !important;
+      width: calc(100% - 120px) !important;
+      transition: all 0.3s ease-in-out;
+    }
+
+    // &:hover {
+    //   .dashboard-content {
+    //     margin-left: 275px !important;
+    //     width: calc(100% - 275px) !important;
+    //     transition: all 0.3s ease-in-out;
+    //   }
+    // }
+  }
   .dashboard-content {
     overflow-x: hidden !important;
 
@@ -34,6 +49,12 @@ body {
     @include media-breakpoint-up(md) {
       margin-left: 275px;
         width: calc(100% - 275px);
+        transition: all .2s ease-in-out;
+      // &.dashboard-expand
+      // {
+      //   margin-left: 120px;
+      //   width: calc(100% - 120px);
+      // }
     }
 
     .dashboard-section {
